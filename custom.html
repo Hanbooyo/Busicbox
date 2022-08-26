@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busic Box</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css"> <!--옛날 브라우저 가지고있는사람들을 위한 웹표준 (노말 css 초기화 css 등으로 인터넷에 찾으면 있다고함)-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/custom.js"> </script>
+
+</head>
+<body>
+     <!--건너뛰기 링크 시작 (마우스못드는 장애우용 웹표준)-->
+     <a id="skipNav" href="#contentsArea">본문바로가기</a>
+     <!-- 건너뒤기 링크 종료 -->
+
+<!--wrapper 영역 시작-->
+<div id="wrapper">
+    <!--헤더 영역 시작-->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo2.png" alt="busicbox"></a>
+        </div>
+        <ul class="infoLink"> <!-- nav를 안쓰는 이유는 얘네가 홈페이지 이용 메인 기능이라기보단 부가적인 애들이라 안썼다고함 -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="login.html">로그인/회원가입</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>     
+        <div class="headMenu">
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="sub"><a href="#">SHOP</a>
+                        <ul>
+                            <li><a href="#">18노트 오르골</a></li>
+                            <li><a href="#">23노트 오르골</a></li>
+                            <li><a href="#">30노트 오르골</a></li>
+                            <li><a href="#">72노트 오르골</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="custom.html">CUSTOM-MUSICBOX</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">QNA</a></li>
+                </ul>
+            </nav>
+            <div id="searchBox">
+                <form name="search" id="topSearch">
+                <input id="search" type="text" name="search" placeholder="검색어를 입력해 보세요">
+                <button><span></span></button>
+                </form>
+            </div>
+        </div>
+    </header>               
+    <!--헤더 영역 종료-->
+
+    <!--본문 영역 시작-->
+    <!--비쥬얼 영역 시작-->
+    <div class="slider_canvas">
+        <div class="slider_panel">
+            <img class="slider_image" src="images/k.jpg" alt="imageSlide">
+            <img class="slider_image" src="images/다운로드1.jpg" alt="imageSlide">
+            <img class="slider_image" src="images/다운로드2.jpg" alt="imageSlide">
+        </div>
+        <div class="left_right_control_panel">
+            <img class="left_control" src="images/leftArrow.png" alt="">
+            <img class="right_control" src="images/rightArrow.png" alt="">
+        </div>
+    </div>
+    <!--비쥬얼 영역 종료-->
+
+    <!-- 메인 콘텐츠 영역 시작-->
+
+        <!-- 오르골 외관 만들기 영역 시작 -->
+        <div class="create_page">
+            <h1>오르골 외형 만들기</h1>
+            <div class="page_content">
+                나만의 오르골을 만들어 보세요<br>
+                <strong>※ 이미지는 배경이 투명한 png파일만 가능합니다</strong>
+            </div>
+            <div class="decorate_area">
+                <div class="custom_area">
+                    <img id="empty_box" src="images/emptybox.png" alt="빈 오르골">
+                    <div class="previewLeft">
+                        <img class="previewImg" src="images/none.png" alt="사용자 이미지"/>
+                    </div>
+                    <div class="previewRight">
+                        <img class="previewImg" src="images/none.png" alt="사용자 이미지"/>
+                    </div>
+                    <img id="handle" src="images/none.png" alt="핸들"/>
+                </div>
+                <div class="tools">
+                    <input type="file" id="u_file" name="u_file" accept='image/*' />
+                    <select id="handle_selector">
+                        <option>태엽 손잡이 고르기</option>
+                        <option value="1">흥인지문 태엽</option>
+                        <option value="2">꽃 태엽</option>
+                        <option value="3">꼬꼬 태엽</option>
+                        <option value="4">나비 태엽</option>
+                        <option value="5">해태 태엽</option>
+                        <option value="6">한옥 태엽</option>
+                        <option value="7">서방각시 태엽</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- 오르골 외관 만들기 영역 종료 -->
+
+        <!-- 멜로디 만들기 영역 시작 -->
+        <div class="create_page">
+            <h1>멜로디 만들기</h1>
+            <div class="page_content">
+                나만의 오르골 멜로디를 만들어 보세요<br>
+            </div>
+            <div class="music_note">
+                <div class="notes_hint">
+                    <ul class="hint">
+                        <li class="guide_notes">A6</li>
+                        <li class="guide_notes">G6</li>
+                        <li class="guide_notes">F6</li>
+                        <li class="guide_notes">E6</li>
+                        <li class="guide_notes">D6</li>
+                        <li class="guide_notes">C6</li>
+                        <li class="guide_notes">B5</li>
+                        <li class="guide_notes">A5</li>
+                        <li class="guide_notes">G5</li>
+                        <li class="guide_notes">F5</li>
+                        <li class="guide_notes">E5</li>
+                        <li class="guide_notes">D5</li>
+                        <li class="guide_notes">C5</li>
+                        <li class="guide_notes">B4</li>
+                        <li class="guide_notes">A4</li>
+                        <li class="guide_notes">G4</li>
+                        <li class="guide_notes">F4</li>
+                        <li class="guide_notes">E4</li>
+                        <li class="guide_notes">D4</li>
+                        <li class="guide_notes">C4</li>
+                    </ul>
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                    <div class="bar bar5"></div>
+                    <div class="bar bar6"></div>
+                    <div class="bar bar7"></div>
+                    <div class="bar bar8"></div>
+                    <div class="bar bar9"></div>
+                    <div class="bar bar10"></div>
+                    <div class="bar bar11"></div>
+                    <div class="bar bar12"></div>
+                    <div class="bar bar13"></div>
+                    <div class="bar bar14"></div>
+                    <div class="bar bar15"></div>
+                    <div class="bar bar16"></div>
+                    <div class="bar bar17"></div>
+                    <div class="bar bar18"></div>
+                    <div class="bar bar19"></div>
+                    <div class="bar bar20"></div>
+                </div>
+                <div id="playBar"></div>
+            </div>
+            <div class="tools">
+                <button title="재생/중지" id="play"></button>
+                <button title="저장" id="save"></button>
+                <button title="불러오기" id="load"></button>
+                <button title="초기화" id="reset">RESET</button>
+            </div>
+        </div>
+        <!-- 멜로디 만들기 영역 종료 -->
+
+        <!-- 공지사항 / 고객센터 영역 시작 -->
+        <div id="CS">
+            <div id="CSInner">
+                <div class="left">
+                    <p>NEWS & EVENT</p>
+                    <ul>
+                        <li><a href=""><span class="tit">(배송공지) 07/22 (금) 휴무로 인한 배송 공지</span><span class="date">2022-07-22</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span class="tit">2022년 가격 인상 안내</span><span class="date">2022-07-22</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span class="tit">(배송공지) 5월 연휴 배송 공지</span><span class="date">2022-07-22</span></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href=""><span class="tit">(공지) 파손·불량 상품 교환 안내</span><span class="date">2022-07-22</span></a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div><a href=""><strong>오르골 관리노하우</strong><p>오르골 유형에 따른</p><p>관리방법 소개</p></a></div>
+                    <div><a href=""><strong>STORE</strong><p>전국</p><p>매장안내</p></a></div>
+                    <div><a href=""><strong>FAQ</strong><p>자주하는 질문</p></a></div>
+                    <div><a href=""><strong>1:1 문의</strong><p>무엇이든</p><p>물어보세요</p></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 공지사항 / 고객센터 영역 종료 -->
+    <!-- 메인 콘텐츠 영역 종료-->
+    <!--본문 영역 종료-->
+
+    <!-- footer 영역 시작 -->
+    <footer id="footer">
+        <div id="footerInner">
+            <section class="guide">
+                <h2 class="hidden">사이트 이용안내</h2>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이메일 주소 무단 수집거부</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">SITE MAP</a></li>
+                </ul>
+            </section>
+            <div id="InfoWrap">
+                
+                <div class="footerInfo">
+                    <strong>사업자명㈜</strong>
+                    사업자등록번호 101-92-93082<span class="partition"></span>
+                    통신판매업신고번호 2022-경기성남-0000호<br>
+                    대표이사 한부영<span class="partition"></span>
+                    경기도 하남시 미사강변대로 95, 12917<br>
+                    전화 1588-5656<span class="partition"></span>
+                    이메일<a href="mailto:busicbox@gmail.com">busicbox@gmail.com</a><span class="partition"></span>
+                    사업자등록정보확인<br>
+                </div>
+                <div class="footerInfo">
+                    <strong>고객센터</strong>
+                    <div>
+                        서울특별시 종로구 종로2가<br>
+                        문의전화 1588-5656<br>
+                        결제도용신고 1588-5656<br>
+                        <a href="#">1:1문의 바로가기</a>
+                    </div>
+                </div>
+                <div class="footerInfo">
+                    <strong>전쟁금융거래 분쟁처리</strong>
+                    <div>
+                        전화 1588-5656<br>
+                        <a href="#">1:1문의 바로가기</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <address>
+                    <span>36 Saemunan-ro 3-gil Jongno-gu Seoul</span>
+                    <span>T. 02-234-5678</span>
+                    <span>M.<a href="mailto:busicbox@gmail.com"> <!--누르면 바로 보내지는 링크생성-->
+                        busicbox@gmail.com
+                    </a></span>
+                </address>
+                <a class="footerLogo">
+                    <img src="images/logo1.png" alt="busicbox">
+                </a>
+                <p class="copyright">COPYRIGHT &copy; 2022 ALL RIGHTS RESERVED Created by Hanboo.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer 영역 종료 -->
+</div>  
+<!--wrapper 영역 종료--> 
+</body>
+</html> 

@@ -1,0 +1,181 @@
+.create_page  {
+    width: 1440px;
+    padding: 50px 0 5px 0;
+    margin: 0 auto;
+}
+
+.create_page h1 {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DDD;
+}
+
+.page_content {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.custom_area {
+    width: 1440px;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+.custom_area #empty_box {
+    position: absolute;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+}
+.custom_area div {
+    position: absolute;
+    display: inline-block;
+    left: 500px;
+    top: 147px;
+    width: 480px;
+    height: 320px;
+}
+.custom_area .previewLeft {
+    left: 472px;
+    top: 235px;
+    width: 391px;
+    height: 183px;
+    transform: rotate3d(-89, -195, 52, 57deg);
+    overflow: hidden;
+}
+.custom_area .previewRight {
+    left: 723px;
+    top: 231px;
+    width: 289px;
+    height: 178px;
+    transform: rotate3d(-46, 77, -23, 68deg);
+    overflow: hidden;
+}
+
+.custom_area .previewTop {
+    left: 589px;
+    top: 58px;
+    width: 306px;
+    height: 249px;
+    transform: rotate3d(-146, 29, 111, 61deg);
+    overflow: hidden;
+
+}
+
+.custom_area .previewLeft img {
+    position: relative;
+    border: none;
+    width: 700px;
+    height: 700px;
+    top: -408px;
+    left: -3px;
+    z-index: 15;
+}
+.custom_area .previewTop img {
+    position: relative;
+    border: none;
+    width: 555px;
+    height: 550px;
+    top: -20px;
+    left: 4px;
+    z-index: 10;
+}
+.custom_area .previewRight img {
+    position: relative;
+    border: none;
+    width: 700px;
+    height: 700px;
+    top: -394px;
+    left: -390px;
+    z-index: 15;
+}
+
+
+
+
+.custom_area #handle {
+    border: none;
+    position: absolute;
+    display: inline-block;
+    left: 750px;
+    top: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+.music_note {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.music_note ul.hint {
+    height: 400px;
+    top: 51px;
+    top: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    background: #EEE;
+    border-right: 1px solid #CCC;
+    opacity: 0.75;
+}
+.music_note ul.hint li.guide_notes {
+    box-sizing: border-box;
+    line-height: 20px;
+    height: 20px;
+    width: 21px;
+    text-align: center;
+    font-size: 0.6em;
+    border: 1px solid #ccc;
+}
+
+.mbm-field div[selected-note] {
+    width: 20px;
+    height: 20px;
+    background: #CCC;
+    opacity: 0.3;
+    border: 1px solid #777;
+    border-bottom: none;
+    border-right: none;
+}
+
+.bar .box {
+    position: absolute;
+    display: inline-block;
+}
+
+.onM {
+    background-color : yellow;
+}
+
+#playBar {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 20px;
+    height: 400px;
+    background-color: rgb(190, 190, 190);
+    opacity: 0.3;
+    border-right: 1 px solid #c7c7c7;
+}
+.tools {
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.tools button {
+    width: 100px;
+    height: 50px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    font-weight: bold;
+}

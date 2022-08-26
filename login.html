@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무 제</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css"> <!--옛날 브라우저 가지고있는사람들을 위한 웹표준 (노말 css 초기화 css 등으로 인터넷에 찾으면 있다고함)-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+     <!--건너뛰기 링크 시작 (마우스못드는 장애우용 웹표준)-->
+     <a id="skipNav" href="#contentsArea">본문바로가기</a>
+     <!-- 건너뒤기 링크 종료 -->
+
+<!--wrapper 영역 시작-->
+<div id="wrapper">
+    <!--헤더 영역 시작-->
+    <div class="logo">
+        <a href="index.html"><img src="images/logo2.png" alt="busicbox"></a>
+    </div>
+        <ul class="infoLink"> <!-- nav를 안쓰는 이유는 얘네가 홈페이지 이용 메인 기능이라기보단 부가적인 애들이라 안썼다고함 -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="join.html">로그인/회원가입</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>     
+        <div class="headMenu">
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="sub"><a href="#">SHOP</a>
+                        <ul>
+                            <li><a href="#">18노트 오르골</a></li>
+                            <li><a href="#">23노트 오르골</a></li>
+                            <li><a href="#">30노트 오르골</a></li>
+                            <li><a href="#">72노트 오르골</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="custom.html">CUSTOM-MUSICBOX</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">QNA</a></li>
+                </ul>
+            </nav>
+            <div id="searchBox">
+                <form name="search" id="topSearch">
+                <input id="search" type="text" name="search" placeholder="검색어를 입력해 보세요">
+                <button><span></span></button>
+                </form>
+            </div>
+        </div>
+    </header>        
+    <!--헤더 영역 종료-->
+
+    <!--본문 영역 시작-->
+    <!--비쥬얼 영역 시작-->
+    <div class="slider_canvas">
+        <div class="slider_panel">
+            <img class="slider_image" src="images/k.jpg" alt="imageSlide">
+            <img class="slider_image" src="images/다운로드1.jpg" alt="imageSlide">
+            <img class="slider_image" src="images/다운로드2.jpg" alt="imageSlide">
+        </div>
+        <div class="left_right_control_panel">
+            <img class="left_control" src="images/leftArrow.png" alt="">
+            <img class="right_control" src="images/rightArrow.png" alt="">
+        </div>
+    </div>
+    <!--비쥬얼 영역 종료-->
+    <!--로그인 영역 시작 -->
+    <div id="loginBox">
+        <section class="login">
+            <h2>로그인</h2>
+            <form action="login.jsp" method="post" id="loginForm" name="loginForm"> <!-- name을 주는이유는 백엔드와 연관 -->
+                <fieldset>
+                    <legend>회원 로그인 폼</legend> <!-- 숨은 제목 -->
+                    <p>
+                        <label for="userId">아이디</label>
+                        <input type="text" id="userId" name="userId" placeholder="Guest" required> <!--placeholder는 힌트 required 필수라는 뜻, 속성을 안준 이유는 속성값=이름 이라 생략가능-->                           
+                    </p>
+                    <p>
+                        <label for="userPw">비밀번호</label>
+                        <input type="password" id="userPw" name="userPw" placeholder="4자이상 8자이하" required>
+                    </p>
+                    <button type="submit">로그인</button> <!--submit을 준 이유는 액션을 취할수있기때문 , input타입과 다른 차이점은 button 타입은 꾸밀수있음-->
+                </fieldset>
+            </form>
+            <div class="memberLink">
+                <a href="join.html" class="join">회원가입</a>
+                <a href="#" class="find">아이디/비밀번호 찾기</a>
+            </div>
+        </section>
+    </div>
+    <!--로그인 영역 종료 -->
+    <!--본문 영역 종료-->
+
+    <!-- footer 영역 시작 -->
+    <footer id="footer">
+        <div id="footerInner">
+            <section class="guide">
+                <h2 class="hidden">사이트 이용안내</h2>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이메일 주소 무단 수집거부</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">SITE MAP</a></li>
+                </ul>
+            </section>
+            <div id="InfoWrap">
+                
+                <div class="footerInfo">
+                    <strong>사업자명㈜</strong>
+                    사업자등록번호 101-92-93082<span class="partition"></span>
+                    통신판매업신고번호 2022-경기성남-0000호<br>
+                    대표이사 한부영<span class="partition"></span>
+                    경기도 하남시 미사강변대로 95, 12917<br>
+                    전화 1588-5656<span class="partition"></span>
+                    이메일<a href="mailto:busicbox@gmail.com">busicbox@gmail.com</a><span class="partition"></span>
+                    사업자등록정보확인<br>
+                </div>
+                <div class="footerInfo">
+                    <strong>고객센터</strong>
+                    <div>
+                        서울특별시 종로구 종로2가<br>
+                        문의전화 1588-5656<br>
+                        결제도용신고 1588-5656<br>
+                        <a href="#">1:1문의 바로가기</a>
+                    </div>
+                </div>
+                <div class="footerInfo">
+                    <strong>전쟁금융거래 분쟁처리</strong>
+                    <div>
+                        전화 1588-5656<br>
+                        <a href="#">1:1문의 바로가기</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <address>
+                    <span>36 Saemunan-ro 3-gil Jongno-gu Seoul</span>
+                    <span>T. 02-234-5678</span>
+                    <span>M.<a href="mailto:busicbox@gmail.com"> <!--누르면 바로 보내지는 링크생성-->
+                        busicbox@gmail.com
+                    </a></span>
+                </address>
+                <a class="footerLogo">
+                    <img src="images/logo1.png" alt="busicbox">
+                </a>
+                <p class="copyright">COPYRIGHT &copy; 2022 ALL RIGHTS RESERVED Created by Hanboo.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer 영역 종료 -->
+</div>     
+</body>
+</html>
+<!--wrapper 영역 종료-->

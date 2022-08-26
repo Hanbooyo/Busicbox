@@ -1,0 +1,77 @@
+/* 로그인 영역 시작 */
+
+#loginBox {
+    width: 500px;
+    margin: 0 auto;
+    padding: 200px 200px;
+}
+
+.login {
+    background-image: radial-gradient(circle at top right, #d6d6d6, #aaaaaa);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2);
+}
+.login > h2 {
+    color: #fff;
+    font-size: 1.2em;
+    padding: 0 0 10px 10px; /*위는 .login padding 10, 오른쪽은 필요없고 왼 아래 넣음*/
+}
+.login form {
+    background-color: #fff;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+    padding: 10px 10px 0 10px;  /* 이렇게 한 이유는 ?*/
+}
+.login label {
+    display: inline-block;
+    width: 80px;
+}   
+.login input {
+    width: 245px;
+    height: 22px;
+    padding: 1px 1px 1px 4px;
+    border: 1px solid #ccc;
+}
+.login button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #ccc;
+}
+.login button:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+.login fieldset {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 10px 0;
+}
+.memberLink {
+    background-color: #fff;
+    border-radius: 0 0 3px 3px;
+    padding: 0 10px;
+    overflow: hidden;  /*아래영역으로부터 영역 확보*/
+}
+
+.join {
+    float: left;
+    padding: 10px 0;
+}
+.find {
+    float: right;
+    padding: 10px 0;
+}
+#userId {
+    margin-bottom: 6px;
+}
+/* 로그인 영역 종료 */
